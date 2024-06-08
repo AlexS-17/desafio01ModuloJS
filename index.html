@@ -15,23 +15,15 @@
         <div class="card">
             <div class="img-card"></div>
               <h6>Laptop Gamer AMD</h6>
-              <p>Precio: $<span id="precioBase"></span> </p>
+              <p>Precio: $400.000 </p>
         
               <p>Cantidad:
                 <span id="cantidad">0</span>
                 <button 
-                onclick='cantidad = cantidad += 1;
-                document.querySelector("#cantidad").innerHTML = cantidad;
-                totalAPagar = cantidad * precio;
-                document.querySelector("#totalAPagar").innerHTML = totalAPagar;' 
-                >+</button>
+                onclick='aumentarCantidad()'>+</button>
 
                 <button
-                onclick='cantidad = cantidad -= 1;
-                document.querySelector("#cantidad").innerHTML = cantidad;
-                totalAPagar = cantidad * precio;
-                document.querySelector("#totalAPagar").innerHTML = totalAPagar;'
-                >-</button>
+                onclick='disminuirCantidad()'>-</button>
               </p>
             </div>
 
